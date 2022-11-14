@@ -1,6 +1,7 @@
 import pygame
 import random
 import math
+import sys
 from pygame import mixer
 
 pygame.init()
@@ -135,7 +136,7 @@ def main():
                 else:
                     pygame.display.quit()
                     pygame.quit()
-                    exit()
+                    sys.exit()
 
             x_enemy[i] += enemy_xchange[i]  # enemy moving to the boundaries
             if x_enemy[i] <= 0:
